@@ -1,0 +1,250 @@
+[
+  {
+    "id": 1,
+    "bookName": "Mathematics for Beginners",
+    "writerName": "John Doe",
+    "price": 200,
+    "description": "An introductory guide to basic mathematics for primary-level students",
+    "category": "Primary"
+  },
+  {
+    "id": 2,
+    "bookName": "Science Wonders",
+    "writerName": "Jane Smith",
+    "price": 250,
+    "description": "An engaging book explaining fundamental science concepts for primary learners",
+    "category": "Primary"
+  },
+  {
+    "id": 3,
+    "bookName": "Fun with Grammar",
+    "writerName": "Robert Green",
+    "price": 180,
+    "description": "A book that makes grammar learning fun and interactive",
+    "category": "Primary"
+  },
+  {
+    "id": 4,
+    "bookName": "Basic Drawing Skills",
+    "writerName": "Emily White",
+    "price": 220,
+    "description": "Learn basic drawing techniques step by step",
+    "category": "Primary"
+  },
+  {
+    "id": 5,
+    "bookName": "Exploring Geography",
+    "writerName": "Mark Robinson",
+    "price": 300,
+    "description": "A comprehensive geography book for secondary-level students",
+    "category": "Secondary"
+  },
+  {
+    "id": 6,
+    "bookName": "Understanding Physics",
+    "writerName": "Alice Turner",
+    "price": 350,
+    "description": "A detailed explanation of physics principles for secondary education",
+    "category": "Secondary"
+  },
+  {
+    "id": 7,
+    "bookName": "World History",
+    "writerName": "Michael Brown",
+    "price": 320,
+    "description": "A deep dive into world history from ancient to modern times",
+    "category": "Secondary"
+  },
+  {
+    "id": 8,
+    "bookName": "Chemical Reactions",
+    "writerName": "Laura Davis",
+    "price": 340,
+    "description": "A guide to understanding various chemical reactions and processes",
+    "category": "Secondary"
+  },
+  {
+    "id": 9,
+    "bookName": "Advanced Chemistry",
+    "writerName": "Chris Wilson",
+    "price": 400,
+    "description": "A higher secondary-level book focusing on advanced chemistry topics",
+    "category": "Higher Secondary"
+  },
+  {
+    "id": 9,
+    "bookName": "Advanced Chemistry",
+    "writerName": "Chris Wilson",
+    "price": 400,
+    "description": "A higher secondary-level book focusing on advanced chemistry topics",
+    "category": "University"
+  },
+  {
+    "id": 10,
+    "bookName": "Calculus Simplified",
+    "writerName": "Sarah Johnson",
+    "price": 450,
+    "description": "An advanced guide to calculus for higher secondary students",
+    "category": "Higher Secondary"
+  },
+  {
+    "id": 11,
+    "bookName": "Physics in Depth",
+    "writerName": "James Clark",
+    "price": 420,
+    "description": "A detailed analysis of higher-level physics principles",
+    "category": "Higher Secondary"
+  },
+  {
+    "id": 12,
+    "bookName": "Biology for Scholars",
+    "writerName": "Jennifer Adams",
+    "price": 410,
+    "description": "Comprehensive coverage of biology concepts for higher secondary students",
+    "category": "Higher Secondary"
+  },
+  {
+    "id": 13,
+    "bookName": "Art of Public Speaking",
+    "writerName": "David Allen",
+    "price": 220,
+    "description": "A guide to mastering public speaking skills for any age group",
+    "category": "Others"
+  },
+  {
+    "id": 14,
+    "bookName": "Creative Writing",
+    "writerName": "Emma Thompson",
+    "price": 270,
+    "description": "A book designed to enhance writing skills and creativity",
+    "category": "Others"
+  },
+  {
+    "id": 15,
+    "bookName": "Time Management Tips",
+    "writerName": "Daniel Garcia",
+    "price": 250,
+    "description": "Effective tips and strategies for managing time efficiently",
+    "category": "Others"
+  },
+  {
+    "id": 16,
+    "bookName": "Cooking Basics",
+    "writerName": "Sophia Martin",
+    "price": 300,
+    "description": "Learn the basics of cooking with easy-to-follow recipes",
+    "category": "Others"
+  },
+  {
+    "id": 17,
+    "bookName": "English Literature Guide",
+    "writerName": "Olivia Hall",
+    "price": 280,
+    "description": "An introduction to classic English literature for secondary students",
+    "category": "Secondary"
+  },
+  {
+    "id": 18,
+    "bookName": "Basic Algebra",
+    "writerName": "Ethan Wright",
+    "price": 310,
+    "description": "A beginner's guide to understanding algebraic equations",
+    "category": "Secondary"
+  },
+  {
+    "id": 19,
+    "bookName": "Physics Experiments",
+    "writerName": "Isabella Scott",
+    "price": 390,
+    "description": "Hands-on physics experiments for curious minds",
+    "category": "Higher Secondary"
+  },
+  {
+    "id": 20,
+    "bookName": "Environmental Science",
+    "writerName": "Alexander Young",
+    "price": 360,
+    "description": "Understanding environmental issues and solutions",
+    "category": "Higher Secondary"
+  },
+  {
+    "id": 21,
+    "bookName": "Painting Techniques",
+    "writerName": "Charlotte Hernandez",
+    "price": 230,
+    "description": "A book to master basic and advanced painting skills",
+    "category": "Others"
+  },
+  {
+    "id": 22,
+    "bookName": "Storytelling Skills",
+    "writerName": "Benjamin Lopez",
+    "price": 260,
+    "description": "Learn the art of storytelling with this interactive guide",
+    "category": "Others"
+  },
+  {
+    "id": 23,
+    "bookName": "Geography Atlas",
+    "writerName": "Mia Gonzalez",
+    "price": 340,
+    "description": "A comprehensive atlas for secondary and higher secondary students",
+    "category": "Secondary"
+  },
+  {
+    "id": 24,
+    "bookName": "Organic Chemistry",
+    "writerName": "William Perez",
+    "price": 450,
+    "description": "A detailed study of organic chemistry for higher secondary students",
+    "category": "Higher Secondary"
+  },
+  {
+    "id": 25,
+    "bookName": "Astronomy Basics",
+    "writerName": "Sophia White",
+    "price": 370,
+    "description": "An introduction to astronomy for secondary-level students",
+    "category": "Secondary"
+  },
+  {
+    "id": 26,
+    "bookName": "Music Theory",
+    "writerName": "James Bell",
+    "price": 280,
+    "description": "Understanding the basics of music composition and theory",
+    "category": "Others"
+  },
+  {
+    "id": 27,
+    "bookName": "Photography Essentials",
+    "writerName": "Harper Young",
+    "price": 320,
+    "description": "Learn the basics of photography with practical examples",
+    "category": "Others"
+  },
+  {
+    "id": 28,
+    "bookName": "World Literature",
+    "writerName": "Mason Baker",
+    "price": 420,
+    "description": "A comprehensive guide to world literature for higher secondary students",
+    "category": "Higher Secondary"
+  },
+  {
+    "id": 29,
+    "bookName": "Chemistry Workbook",
+    "writerName": "Ella Reed",
+    "price": 380,
+    "description": "Practice problems for mastering chemistry concepts",
+    "category": "Secondary"
+  },
+  {
+    "id": 30,
+    "bookName": "Logical Reasoning",
+    "writerName": "Liam Hill",
+    "price": 300,
+    "description": "Develop critical thinking and logical reasoning skills",
+    "category": "Others"
+  }
+]
