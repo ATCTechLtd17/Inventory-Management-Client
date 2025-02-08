@@ -118,7 +118,7 @@ const Login = () => {
             id="email"
             name="email"
             placeholder="Enter your email"
-            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900"
             required
           />
         </div>
@@ -134,7 +134,7 @@ const Login = () => {
             id="password"
             name="password"
             placeholder="Enter your password"
-            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-900"
             required
           />
         </div>
@@ -147,7 +147,7 @@ const Login = () => {
           <span className="text-gray-700">Not registered yet? </span>
           <span
             className="text-purple-950 hover:text-teal-600 cursor-pointer"
-            onClick={() => navigate("/homelayout/register")}
+            onClick={() => navigate("/register")}
           >
             Register here
           </span>

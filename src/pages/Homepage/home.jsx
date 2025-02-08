@@ -20,7 +20,7 @@ const Home = () => {
             </h4>
             <div className="mt-6">
 
-              <Link to="/homelayout/register">
+              <Link to="register">
                 <button className="btn bg-gradient-to-r from-gray-800 to-purple-900 text-white px-6 py-3 text-lg ring-4 hover:ring-2">
                   Register Now
                 </button>

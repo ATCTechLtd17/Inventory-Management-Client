@@ -122,7 +122,7 @@ const SettingsPage = () => {
   const handleLogout = () => {
     localStorage.removeItem("user");
     setUser(null);
-    navigate("/homelayout");
+    navigate("/");
     Swal.fire("Logged Out", "You have been logged out.", "info");
   };
 

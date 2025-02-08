@@ -28,33 +28,15 @@ import PrintPurchaseList from "../components/PrintPurchaseList";
 import PrintSellList from "../components/navigators/PrintSellList";
 import SellBooks from "../components/Layout/BooksLayout/SellBooks";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
-import MainHomepage from "../pages/Homepage/MainHomepage";
-import Services from "../pages/Homepage/Services";
-import ErrorPage from "../pages/Homepage/ErrorPage";
+
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
-      {
-        path:"/",
-        element:<MainHomepage/>,
-      },
-      
-      {
-        path:"services",
-        element:<Services/>,
-      },
-      {
-        path:"error",
-        element:<ErrorPage/>,
-      },
-
-    ],
-  },
   {
-    path:"/homeLayout",
+    path:"/",
     element: <HomepageLayout />,
     children: [
       {
@@ -82,6 +64,8 @@ const routes = createBrowserRouter([
       },
     ],
   },
+],
+},
 
   {
     path: "book/:bookId",

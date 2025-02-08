@@ -22,7 +22,7 @@ const Nav = () => {
       if (response.data.success) {
         localStorage.removeItem("user"); // Remove user from local storage
         setUser(null); // Clear user in context
-        navigate("/homelayout/login"); // Redirect to login page
+        navigate("/login"); // Redirect to login page
       } else {
         console.error("Logout failed");
       }
@@ -62,7 +62,7 @@ const Nav = () => {
                   />
                 </div>
                 {/* User Name */}
-                <p className="font-bold text-teal-900">{user.name || "User"}</p>
+                <p className="font-bold text-purple-950">{user.name || "User"}</p>
               </div>
 
               {/* Dropdown Menu */}
@@ -85,7 +85,7 @@ const Nav = () => {
           ) : (
             // Login Button if not logged in
             <button
-              onClick={() => navigate("/homelayout/login")}
+              onClick={() => navigate("/login")}
               className="px-4 py-2 bg-white text-teal-600 font-semibold rounded-md shadow hover:bg-gray-100 transition"
             >
               Login

@@ -14,16 +14,7 @@ const Nav = () => {
         >
           Home
         </NavLink>
-        {/* <NavLink
-          to="/homeLayout"
-          className={({ isActive }) =>
-            `text-slate-50 hover:underline hover:text-gray-800 ${
-              isActive ? "text-blue-300 font-bold underline" : ""
-            }`
-          }
-        >
-          Books
-        </NavLink> */}
+        
         <NavLink
           to="about"
           className={({ isActive }) =>
@@ -45,7 +36,7 @@ const Nav = () => {
           Blog
         </NavLink>
         <NavLink
-          to="/homelayout/login"
+          to="login"
           className={({ isActive }) =>
             `text-slate-50 hover:underline hover:text-gray-800 ${
               isActive ? "text-red-300 font-bold underline" : ""

@@ -77,7 +77,7 @@ function RegisterForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full mt-2 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full mt-2 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-"
             placeholder="Enter your name"
           />
         </div>
@@ -205,7 +205,7 @@ function RegisterForm() {
           <span className="text-gray-700">Already have an account? </span>
           <span
             className="text-purple-950 hover:text-teal-600 cursor-pointer"
-            onClick={() => navigate("/homelayout/login")}
+            onClick={() => navigate("/login")}
           >
             Login here
           </span>

@@ -241,7 +241,7 @@ const SellBooks = () => {
                 className="w-full px-2 py-2 border border-gray-700 rounded text-black focus:ring-2 focus:ring-indigo-500"
                 value={bookName}
                 onChange={(e) => setBookName(e.target.value)}
-                placeholder="Book Name"
+                placeholder="Product Name"
               />
               {/* Suggestions Dropdown */}
               {filteredSuggestions.length > 0 && (
@@ -265,7 +265,7 @@ const SellBooks = () => {
                 className="w-full px-2 py-2 border border-gray-700 rounded text-black focus:ring-2 focus:ring-indigo-500"
                 value={writerName}
                 onChange={(e) => setWriterName(e.target.value)}
-                placeholder="Writer Name"
+                placeholder="Brand Name"
               />
             </div>
 
