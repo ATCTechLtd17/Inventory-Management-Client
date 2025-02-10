@@ -1,7 +1,8 @@
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LoginContext } from "../LoginContext/LoginContext";
-import axios from "axios";
+import Swal  from "sweetalert2";
+
 
 const Nav = () => {
   const { user, setUser } = useContext(LoginContext); // Access user and setUser from context
@@ -10,26 +11,31 @@ const Nav = () => {
 
   // Handle Logout
   const handleLogout = async () => {
-    try {
-      const response = await axios.post(
-        "https://libraryserver.atctechlimited.com/api/logout",
-        {},
-        {
-          withCredentials: true, // This is important to include cookies in the request
-        }
-      );
-
-      if (response.data.success) {
-        localStorage.removeItem("user"); // Remove user from local storage
-        setUser(null); // Clear user in context
-        navigate("/login"); // Redirect to login page
-      } else {
-        console.error("Logout failed");
+    
+    Swal.fire(
+      {
+        title:"Are you Sure?",
+        text: "You will be logged out!",
+        icon: "warning",
+        showCancelButton:true,
+        confirmButtonText:"Yes , logout",
+        cancelButtonText: "Cancel",
       }
-    } catch (error) {
-      console.error("Error during logout:", error);
-    }
+    ).then((result) => {
+      
+      // Remove user from LS
+      if(result.isConfirmed) {
+
+        localStorage.removeItem("user");
+        // Clear User
+        setUser(null);
+        navigate("/login");
+       
+       
+      }
+    });   
   };
+
 
   // Toggle Dropdown
   const toggleDropdown = () => {

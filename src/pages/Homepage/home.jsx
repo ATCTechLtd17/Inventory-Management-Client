@@ -21,7 +21,7 @@ const Home = () => {
             <div className="mt-6">
 
               <Link to="register">
-                <button className="btn bg-gradient-to-r from-gray-800 to-purple-900 text-white px-6 py-3 text-lg ring-4 hover:ring-2">
+                <button className="btn items-center bg-gradient-to-r from-gray-800 to-purple-900 text-white px-6  text-lg ring-4 hover:ring-2">
                   Register Now
                 </button>
               </Link>
@@ -29,7 +29,7 @@ const Home = () => {
           </div>
 
           {/* Image Section */}
-          <div className="h-60 w-60 lg:h-96 lg:w-[700px]">
+          <div className="h-60 w-60 lg:h-96 lg:w-[600px]">
             <img
               src={Sideimg}
               alt="Library Management Illustration"

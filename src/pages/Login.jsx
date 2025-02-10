@@ -27,6 +27,7 @@ const Login = () => {
   
 
   // Handle form submission
+  // Handle form submission
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -42,62 +43,32 @@ const Login = () => {
     const form = new FormData(e.target);
     const email = form.get("email");
     const password = form.get("password");
-
+    
     const foundUser = users.find(
       (u) => u.email === email && u.password === password
     );
-
-    if (foundUser) {
-      try {
-        const response = await axios.post(
-          "https://libraryserver.atctechlimited.com/api/jwt",
-          foundUser,
-          {
-            headers: {
-              "content-Type": "application/json",
-            },
-            withCredentials: true, // This is important to include cookies in the request
+    setUser(foundUser);
+    localStorage.setItem("user", JSON.stringify(foundUser));
+          if(foundUser){
+            Swal.fire({
+              title: "Login Successful!",
+              text: "You have successfully logged in!",
+              icon: "success",
+            });
+  
+            navigate("/dashboard");
           }
-        );
+          else{
+            Swal.fire({
+              title: "Login Failed!",
+              text: "Invalid email or password. Please try again.",
+              icon: "error",
+            });
+            
+          }
+} 
 
-        const data = response.data;
-
-        if (data.success) {
-          setUser(foundUser);
-          localStorage.setItem("user", JSON.stringify(foundUser));
-
-          Swal.fire({
-            title: "Login Successful!",
-            text: "You have successfully logged in!",
-            icon: "success",
-          });
-
-          navigate("/dashboard");
-        } else {
-          Swal.fire({
-            title: "Error!",
-            text: "Failed to retrieve token.",
-            icon: "error",
-          });
-        }
-      } catch (error) {
-        console.error("Error fetching token:", error);
-        Swal.fire({
-          title: "Error!",
-          text: "An error occurred while logging in.",
-          icon: "error",
-        });
-      }
-    } else {
-      Swal.fire({
-        title: "Something Wrong!",
-        text: "Invalid Credentials",
-        icon: "error",
-      });
-    }
-  };
-
-  return (
+ return (
     <div className="flex justify-center items-center h-screen bg-slate-300 ">
       <form
         onSubmit={handleLogin}
