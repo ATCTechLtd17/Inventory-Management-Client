@@ -188,8 +188,8 @@ function RegisterForm() {
 
         <p className="text-xs text-center">
           By creating an account you agree to our
-          <Link to="#" className="text-cyan-600">
-            Terms & Conditions
+          <Link to="#" className="text-purple-600">
+           <span> Terms & Conditions</span>
           </Link>
         </p>
 
@@ -204,7 +204,7 @@ function RegisterForm() {
         <div className="text-center mt-4">
           <span className="text-gray-700">Already have an account? </span>
           <span
-            className="text-purple-950 hover:text-teal-600 cursor-pointer"
+            className="text-purple-600 hover:text-purple-900 cursor-pointer"
             onClick={() => navigate("/login")}
           >
             Login here

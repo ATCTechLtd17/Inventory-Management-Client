@@ -117,7 +117,7 @@ const Login = () => {
         <div className="text-center mt-4">
           <span className="text-gray-700">Not registered yet? </span>
           <span
-            className="text-purple-950 hover:text-teal-600 cursor-pointer"
+            className="text-purple-600 hover:text-purple-900 cursor-pointer"
             onClick={() => navigate("/register")}
           >
             Register here
