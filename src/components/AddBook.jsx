@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState ,useEffect } from "react";
 import Swal from "sweetalert2";
+import { FaUpload } from "react-icons/fa";
 
 const ibb_key = import.meta.env.VITE_IBB_KEY;
 const ibb_api = `https://api.imgbb.com/1/upload?key=${ibb_key}`;
@@ -125,8 +126,8 @@ const AddBook = () => {
       <h2 className="md:text-2xl font-extrabold mb-6 text-purple-900">
         Add Your Product
       </h2>
-      <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        
+      <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {/* Entry Date */}
         <div>
           <label className="block text-sm font-medium mb-1">Entry Date</label>
@@ -272,28 +273,35 @@ const AddBook = () => {
             placeholder="Sell Rate"
           />
         </div>
+        </div>
         
-        
-      <div className="flex flex-row items-center ">
+      <div className="row-span-5">
           {/* Image Upload */}
-          <div>
-          <label className="block text-sm font-medium mb-1">Product Image</label>
+          <div className="flex flex-col items-center justify-center border-2 border-dashed border-gray-300 p-6 rounded-lg">
+          <label className="w-full text-center cursor-pointer">
           <input
             type="file"
             accept="image/*"
             onChange={handleImage}
-            className="w-full px-3 py-2 border border-gray-700 rounded bg-white text-black focus:ring-2 focus:ring-purple-900"
-            placeholder="Select Image " required
+            className="hidden"
+             required
           />
+          <div className="flex flex-col items-center" >
+            <FaUpload className="text-gray-500 text-3xl mb-3 "/>
+            <p className="text-gray-600">Click to Upload Photo</p>
+          </div>
+          </label>
+
+          </div>
           {bookImage && (
-            <div>
+            <div className="mt-5">
               <img src={bookImage} 
               alt="Product Preview" 
-              className="w-60 h-60 my-5   object-cover rounded-lg shadow-lg border-2 border-gray-300"/>
+              className="w-40 h-40 object-cover rounded-lg shadow-md"/>
             </div>
           )}
         </div>
-      </div>
+     
        
         {/* Submit Button */}
         <div className="col-span-full">
